@@ -1,0 +1,36 @@
+:root{
+    --bg-color: #fff;
+    --text-color: black;
+    --secondary-color: pink;
+
+    --grad-color-green: linear-gradient(to right, #b926b9, #166516);
+
+    --fs-3: 1.5rem;
+    --fs-2: 2.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}

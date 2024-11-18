@@ -1,0 +1,37 @@
+nav,
+.nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    font-size: var(--fs-3);
+
+}
+
+.nav-links a{
+    color: var(--text-color);
+    text-decoration-color: var(--bg-color);
+    transition: all .4s ease;
+}
+
+.nav-links a:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: var(--secondary-color);
+}
+
+.logo{
+    font-size: var(--fs-2);
+}
+
+.logo:hover{
+    cursor: default;
+}
