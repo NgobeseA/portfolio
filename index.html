@@ -10,7 +10,7 @@
         </style>
 </head>
 <body>
-    <nav>
+    <nav id="desktop-nav">
         <div class="logo">Andile Ngobese</div>
         <div>
             <ul class="nav-links">
@@ -21,5 +21,25 @@
             </ul>
         </div>
     </nav>
+    <!-------For Responsive devices (small - medium)-->
+    <nav id="toggle-nav">
+        <div class="logo">Andile Ngobese</div>
+        <div class="toggle-menu">
+            <div class="toggle-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="script.js" defer></script>
 </body>
 </html>
