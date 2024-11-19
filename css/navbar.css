@@ -77,7 +77,7 @@ nav{
     display: block;
     padding: 10px;
     font-size: var(--fs-3);
-    transition: all 0.4 ease-in-out;
+    transition: all 0.4 ease;
     color: var(--text-color);
     align-items: center;
 }
