@@ -1,9 +1,10 @@
 :root{
     --bg-color: #fff;
-    --text-color: black;
+    --text-color: rgb(55, 54, 54);
     --secondary-color: pink;
+    --primary-color: rgb(0, 149, 255);
 
-    --grad-color-green: linear-gradient(to right, #b926b9, #166516);
+    --grad-color-green: linear-gradient(to right, #ea95ea, #9ae39a);
 
     --fs-3: 1.5rem;
     --fs-2: 2.5rem;
@@ -23,6 +24,7 @@ p{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    line-height: 1.5;
 }
 
 h1, h2, h3,
@@ -38,4 +40,32 @@ a{
 
 ul{
     list-style: none;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    padding-inline: 13rem;
+    width: fit-content;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.hero_txt{
+    align-self: center;
+}
+
+.social_container{
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.text_p1{
+    margin-bottom: 1rem;
 }

@@ -5,50 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Andile Ngobese</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4/get-started/to/font-awesome/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Andile Ngobese</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#about">Experience</a></li>
-                <li><a href="#about">Projects</a></li>
-                <li><a href="#about">Contact</a></li>
-            </ul>
+    <header>
+        <div class="nav-container">
+            <nav id="desktop-nav">
+                <div class="logo">Andile Ngobese</div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">Experience</a></li>
+                        <li><a href="#about">Projects</a></li>
+                        <li><a href="#about">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-------For Responsive devices (small - medium)-->
+            <nav id="toggle-nav">
+                <div class="logo">Andile Ngobese</div>
+                <div class="toggle-menu">
+                    <div class="toggle-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <!-------For Responsive devices (small - medium)-->
-    <nav id="toggle-nav">
-        <div class="logo">Andile Ngobese</div>
-        <div class="toggle-menu">
-            <div class="toggle-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#about" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+    </header>
     <menu>
         <section id="hero" class="hero">
             <div class="hero_txt">
-                <p>hello.world("printf"), I'm</p>
+                <p class="text_p1">hello.world(), I'm</p>
                 <h1>Andile Ngobese</h1>
+                <h4>ABT Intern</h4>
                 <p>IOT | Process Automation | Fullstack Developer | Extended Reality Developer</p>
-                <a href="" class="button" onclick="window.open('./assets/Andile_Ngobese_CV.pdf')">Download CV</a>
+                <a href="" class="button btn" onclick="window.open('./assets/Andile_Ngobese_CV.pdf')">Download CV</a>
             </div>
             <div class="social_container">
-                <a href=""></a>
+                <a href=""><img src="./assets/github-brands-solid.svg" alt="my github account" class="icon" width="26px" height="26px"></i></a>
+                <a href=""><img src="./assets/linkedin-brands-solid.svg" alt="my linkedin" class="icon" width="26px" height="26px"></a>
             </div>
+        </section>
+        <section id="about">
+
         </section>
     </menu>
 

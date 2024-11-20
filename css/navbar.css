@@ -1,12 +1,27 @@
+header{
+   background: var(--text-color); 
+   height: 20vh;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+}
+
+.nav-container{
+    padding-inline: 10vw;
+    padding-top: 2rem;
+}
+
 nav,
 .nav-links{
     display: flex;
 }
 
 nav{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
+    background: var(--bg-color);
+    padding-inline: 2rem;
+    border-radius: 4rem;
 }
 
 .nav-links{
