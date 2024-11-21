@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
 :root{
     --bg-color: #fff;
     --text-color: rgb(55, 54, 54);
@@ -8,6 +10,9 @@
 
     --fs-3: 1.5rem;
     --fs-2: 2.5rem;
+
+    --font-fam1: "Roboto", sans-serif;
+    --font-fam2: "Geist Mono", monospace;
 }
 
 html{
@@ -21,7 +26,7 @@ html{
 }
 
 p{
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-fam2);
     font-weight: 500;
     font-style: normal;
     line-height: 1.5;
@@ -32,10 +37,14 @@ h4{
     margin: 0;
     padding: 0;
     font-weight: 700;
+    font-family: var(--font-fam1);
+    font-style: normal;
 }
 
 a{
     text-decoration: none;
+    font-family: var(--font-fam1);
+    font-style: normal;
 }
 
 ul{
@@ -46,26 +55,57 @@ section{
     padding-top: 4vh;
     height: 96vh;
     padding-inline: 13rem;
-    width: fit-content;
+    min-height: fit-content;
 }
 
 .hero{
     display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
+}
+
+#hero{
+    display: flex;
+    height: 80vh;
+    justify-content: start;
+    gap: 5rem;
+}
+
+.hero_pic{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    margin: auto 0;
+}
+
+.hero_pic img{
+    border-radius: 3rem;
 }
 
 .hero_txt{
+    align-items: center;
     align-self: center;
+}
+
+.hero_txt h1{
+    margin-block: 1rem;
+    font-size: 3rem;
+}
+.hero_txt h4{
+    margin-block: 0.75rem;
+    font-size: 1rem;
+}
+
+.text_p1{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    
 }
 
 .social_container{
     display: flex;
     padding-top: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: start;
+    align-items: center;
 }
-
-.text_p1{
-    margin-bottom: 1rem;
+.icon{
 }

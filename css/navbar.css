@@ -45,6 +45,7 @@ nav{
 
 .logo{
     font-size: var(--fs-2);
+    font-family: "Roboto", sans-serif;
 }
 
 .logo:hover{
