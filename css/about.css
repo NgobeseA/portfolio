@@ -1,0 +1,32 @@
+.about_container{
+    display: flex;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+
+.about_details_container{
+
+    gap: 4rem;
+}
+
+.details_container{
+    padding: 1.5rem;
+    border: 0.2rem solid var(--text-color);
+    border-radius: 2rem;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .text_p1, .title{
+    text-align: center;
+}
+
+
+.no{
+    border: none;
+}
+
+#experience{
+    background: var(--text-color);
+}
