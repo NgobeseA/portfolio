@@ -4,6 +4,10 @@
     margin-block: 2rem;
 }
 
+.section-container{
+    padding-top: 4rem;
+}
+
 .about_details_container{
 
     gap: 4rem;
@@ -18,10 +22,14 @@
     align-items: center;
 }
 
-#about .text_p1, .title{
+#about .text_p, .title{
     text-align: center;
 }
 
+.title{
+    font-size: var(--fs-2);
+    margin-block: 1rem;
+}
 
 .no{
     border: none;
@@ -30,3 +38,5 @@
 #experience{
     background: var(--text-color);
 }
+
+/*********** PROJECTS ***********/
