@@ -40,3 +40,46 @@
 }
 
 /*********** PROJECTS ***********/
+.experience_container{
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.card{
+    padding: 1rem;
+    border: .1rem solid var(--text-color);
+    border-radius: 2rem;
+    width: 30%;
+}
+
+.article_container{
+    border-radius: 2rem;
+}
+
+.article_container img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project_title{
+    margin-block: 1.5rem;
+    font-weight: 700;
+}
+
+#projects .text_p{
+    text-align: center;
+}
+
+#projects{
+    padding-top: 4rem;
+}
+
+
+.icon{
+    width: 1.5rem;
+}
+
+.btn_container{
+    gap: 1rem;
+}
