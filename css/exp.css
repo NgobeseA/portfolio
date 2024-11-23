@@ -46,6 +46,16 @@ small{
     left: 0;
     top: 0;
     z-index: 1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
 }
 
 .position, .languages{
