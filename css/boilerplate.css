@@ -109,3 +109,12 @@ section{
 }
 .icon{
 }
+
+@media screen and (max-width: 1400px) {
+    #hero{
+        height: 83vh;
+        margin-bottom: 4rem;
+    }
+
+    
+}

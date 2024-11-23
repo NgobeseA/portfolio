@@ -9,6 +9,10 @@ small{
     
 }
 
+.exp{
+    position: relative;
+}
+
 .container{
     padding: 10px 50px;
     position: relative;
