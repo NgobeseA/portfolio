@@ -1,0 +1,40 @@
+Transition and animation
+
+Transition:- wait until change in a property occurs
+	then allows those changes to take place over time
+Animation :- provide keyframes for more controll over the animation
+	
+
+/*** Transition Element ***/
+transition-property:- define which property the transition effect should
+			be applied to
+transtion-duration:- defines how long the transition effect should take to
+			complete
+transition-timing-function:- defines the acceleration curve for the transition
+				common possible values(ease, linear, forward, etc)
+transition-delay:
+
+/*** syntax for animation in css ***/
+@keyframes nameOfAnimation {}
+
+animation-name:- for selecting the keyframe 
+you want to use to animate the element
+animation-duration:- sets the time it takes for the animation to complete one lap
+animation-timing-function:- ease, ease-in-out, linear
+animation-delay:-
+animation-iteration-count:- defines how many times the animation should run 
+animation-direction:- default is normal, other option is reverse
+animation-fill-mode:- options are none, forward, backward, both
+
+
+scroll watch
+animation-timeline: scroll();
+animation-timing-function: linear;
+
+we have animation-timeline: view(); which happen when you scroll to that div
+animation-range-start: cover, contain;
+animation-range: entry, exit;
+
+@media(prefers-reduced-motion: no-preference) {
+	// animation should go here, this help on those who don't want animation on device
+}
