@@ -1,4 +1,5 @@
 header{
+    width: 100%;
    background: var(--text-color); 
    height: 20vh;
    border-bottom-left-radius: 50%;
@@ -115,7 +116,7 @@ nav{
     opacity: 0;
 }
 .toggle-icon.open span:last-child{
-    transform: rotate(-45) translate(10px, -5px);
+    transform: rotate(-45deg) translate(10px, -5px);
 }
 
 
@@ -127,5 +128,22 @@ nav{
 
     #toggle-nav{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        font-size: 1.5rem;
+    }
+    nav{
+        height: 6vh;
+    }
+
+    header{
+        height: 14vh;
+    }
+
+    .nav-container{
+        padding-inline: 6rem;
     }
 }

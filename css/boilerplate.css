@@ -58,6 +58,11 @@ section{
     min-height: fit-content;
 }
 
+#contact{
+    padding-block: 4vh;
+    padding-inline: 13rem;
+}
+
 .hero{
     display: flex;
 }
@@ -110,11 +115,79 @@ section{
 .icon{
 }
 
+#contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts{
+    border: var(--text-color) .2rem solid;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.field{
+    display: flex;
+    
+    gap: 1rem;
+    line-height: 1.5;
+}
+
+footer{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.foot-container{
+    padding-block: 2rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 1400px) {
     #hero{
         height: 83vh;
         margin-bottom: 4rem;
     }
+    #desktop-nav {
+        display: none;
+      }
+      #hamburger-nav {
+        display: flex;
+      }
+      #experience,
+      .experience-details-container {
+        margin-top: 2rem;
+      }
+      #profile,
+      .section-container {
+        display: block;
+      }
 
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
     
+}
+
+@media screen and (max-width: 800px) {
+    #hero{
+        display: block;
+    }
+
+    section{
+        padding-inline: 6rem;
+        padding-top: 2vh;
+    }
+    .hero_pic{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero_txt{
+        padding-top: 2rem;
+    }
 }

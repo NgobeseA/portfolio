@@ -83,3 +83,24 @@
 .btn_container{
     gap: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+    .experience_container{
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    .card{
+        width: fit-content;
+    }
+    .section-container{
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .about_container{
+        display: grid;
+        gap: 1rem;
+        margin-block: 1rem;
+    }
+}
