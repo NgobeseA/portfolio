@@ -60,6 +60,15 @@ small{
     margin-bottom: 15px;
 }
 
+.languages{
+    padding-top: 1rem;
+}
+
+.hori{
+    height: 2px;
+    background: var(--text-color);
+}
+
 @media (prefers-reduced-motion: no-preference){
 
     @keyframes moveline{

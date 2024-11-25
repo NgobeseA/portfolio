@@ -69,9 +69,9 @@ section{
 
 #hero{
     display: flex;
-    height: 80vh;
     justify-content: start;
     gap: 5rem;
+    
 }
 
 .hero_pic{
@@ -144,17 +144,16 @@ footer{
     text-align: center;
 }
 
+.title.white{
+    color: var(--bg-color);
+}
+
 @media screen and (max-width: 1400px) {
     #hero{
-        height: 83vh;
+        
         margin-bottom: 4rem;
     }
-    #desktop-nav {
-        display: none;
-      }
-      #hamburger-nav {
-        display: flex;
-      }
+    
       #experience,
       .experience-details-container {
         margin-top: 2rem;
@@ -174,7 +173,13 @@ footer{
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+    section{
+        padding-inline: 8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
     #hero{
         display: block;
     }
@@ -189,5 +194,21 @@ footer{
     }
     .hero_txt{
         padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero_txt h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .text_p1{
+        font-size: 1rem;
+    }
+
+    section{
+        padding-inline: 1rem;
     }
 }
