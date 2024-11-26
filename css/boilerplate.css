@@ -241,6 +241,7 @@ footer{
 
     .hero_pic img{
         border-radius: 1rem;
+        width: 100%;
     }
 
     .experience_container{
