@@ -148,6 +148,32 @@ footer{
     color: var(--bg-color);
 }
 
+@media (prefers-reduced-motion: no-preference){
+
+    @keyframes appear{
+        0%{
+            opacity: 0;
+            clip-path: inset(0 100% 100% 0);
+        }
+        100%{
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+        }
+    }
+    
+    section{
+        padding-top: 4vh;
+        height: 86vh;
+        padding-inline: 13rem;
+        min-height: fit-content;
+
+        animation-name: appear;
+        animation-timing-function: linear;
+        animation-range: entry cover 40%;
+        animation-timeline: view();
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #hero{
         

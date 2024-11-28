@@ -1,22 +1,48 @@
 .button{
+    display: inline-block;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: .8rem;
     font-weight: 600;
     width: 9rem;
     font-size: 1rem;
     text-align: center;
     font-family: var(--font-fam2);
-    transition: all 400ms ease;
+    isolation: isolate;
+    position: relative;
+    color: var(--text-color);
+    border: .2rem solid var(--text-color);
 }
 
-.btn{
+.button::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    scale: 0 1;
+    transition: scale 450ms;
+    background: var(--text-color);
+    transform-origin: right;
+    border-radius: .4rem;
+}
+
+.button:hover::after,
+.button:focus-visible::after{
+    scale: 1 1;
+    color: var(--bg-color);
+    transform-origin: left;
+}
+.button:hover{
+    color: var(--bg-color);
+}
+
+/* .btn{
     background: var(--text-color);
     color: var(--bg-color);
 }
 
 .btn:hover{
     background: black;
-}
+} */
 
 button{
     padding: .5rem;

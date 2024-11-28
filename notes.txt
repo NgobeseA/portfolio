@@ -38,3 +38,27 @@ animation-range: entry, exit;
 @media(prefers-reduced-motion: no-preference) {
 	// animation should go here, this help on those who don't want animation on device
 }
+
+button{
+display: inline-block;
+position: relative;
+isolation: isolate;
+...
+}
+
+button::after{
+content: '';
+position: absolute;
+z-index: -1;
+inset: 0;
+background: var(--color)
+
+scale: 0 1;
+transition: scale 450ms;
+transform-orgin: right;
+}
+.button::hover::after,
+.button:focus-visible::after{
+transform-origin: left;
+scale: 1 1;
+}
