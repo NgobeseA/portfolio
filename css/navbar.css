@@ -61,6 +61,7 @@ nav{
 .toggle-menu{
     position: relative;
     display: inline-block;
+    z-index: 999;
 }
 
 .toggle-icon{
