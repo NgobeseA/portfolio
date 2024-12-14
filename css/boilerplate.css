@@ -66,6 +66,7 @@ section{
 
 .hero{
     display: flex;
+    animation: smooth-appear 10s ease-out forwards;
 }
 
 #hero{
@@ -148,8 +149,62 @@ footer{
 .title.white{
     color: var(--bg-color);
 }
+.hero_pic{
+    animation: moveLeft 950ms ease-out;
+}
 
-@media (prefers-reduced-motion: no-preference){
+.hero_txt{
+    animation: moveRight 950ms ease-out;
+}
+
+@keyframes smooth-appear {
+    to{
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+@keyframes moveRight {
+    from{
+        transform: translateX(900px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.nav-container{
+    animation: fromTop 950ms ease-out;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+@keyframes fromTop {
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+    transition: all 4s ease-out;
+}
+
+@media (prefers-reduced-motion){
 
     /* @keyframes appear{
         0%{
@@ -173,56 +228,15 @@ footer{
         animation-range: entry 0;
         animation-timeline: view();
     } */
-    .hero{
-        
-        animation: smooth-appear 10s ease-out forwards;
-    }
-
-    .hero_pic{
-        animation: moveLeft 950ms ease-out;
-    }
-
-    .hero_txt{
-        animation: moveRight 950ms ease-out;
-    }
-
-    @keyframes smooth-appear {
-        to{
-            bottom: 20px;
-            opacity: 1;
-        }
-    }
-    @keyframes moveRight {
-        from{
-            transform: translateX(900px);
-        }
-        to{
-            transform: translateX(0);
-        }
+    .hero, .hero_pic, .hero_txt{
+        animation: none;
     }
 
     .nav-container{
-        animation: fromTop 950ms ease-out;
-        animation-fill-mode: both;
-        animation-delay: 1s;
+        animation: none;
     }
-    @keyframes fromTop {
-        from{
-            transform: translateY(-300px);
-        }
-        to{
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes moveLeft{
-        from{
-            transform: translateX(-100px);
-        }
-        to{
-            transform: translateX(0);
-        }
-    }
+    
+    
 }
 
 @media screen and (max-width: 1400px) {
