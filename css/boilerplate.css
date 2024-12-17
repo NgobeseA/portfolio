@@ -117,25 +117,6 @@ section{
 .icon{
 }
 
-#contact{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contacts{
-    border: var(--text-color) .2rem solid;
-    border-radius: .5rem;
-    padding: 1rem;
-}
-
-.field{
-    display: flex;
-    
-    gap: 1rem;
-    line-height: 1.5;
-}
-
 footer{
     background: var(--text-color);
     color: var(--bg-color);
