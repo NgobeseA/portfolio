@@ -13,6 +13,17 @@
         </style>
 </head>
 <body>
+    <!-- <header>
+        <nav id="desktop-nav">
+            <a href="" class="logo">Andile Ngobese</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
     <header>
         <div class="nav-container">
             <nav id="desktop-nav">
@@ -22,11 +33,11 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#about">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-            <!-------For Responsive devices (small - medium)-->
+            <!-- -----For Responsive devices (small - medium)-- -->
             <nav id="toggle-nav">
                 <div class="logo">Andile Ngobese</div>
                 <div class="toggle-menu">
@@ -37,9 +48,9 @@
                     </div>
                     <div class="menu-links">
                         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
-                        <li><a href="#about" onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                     </div>
                 </div>
             </nav>
@@ -68,6 +79,9 @@
             <p class="text_p">Get to know me</p>
             <h1 class="title">About Me</h1>
             <div class="section-container">
+                <div class="about_pic_section">
+                    <img src="./assets/avatar.jpeg" alt="Avatar image" class="about_pic">
+                </div>
                 <div class="about_details_container">
                     <div class="about_container">
                         <div class="details_container">
@@ -110,6 +124,11 @@
                 </div>
                 
             </div>
+            <img src="./assets/arrow.png" 
+            alt="" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+            >
         </section>
         <section class="trans-container hidden" id="experience">
             <h1 class="title white">Experience & Education</h1>
@@ -215,6 +234,11 @@
                     </div>
                 </div>
             </div>
+            <img src="./assets/arrow.png" 
+            alt="" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+            >
         </section>
         <section id="projects"class="trans-container hidden">
             <p class="text_p">Discover my recent</p>
@@ -288,6 +312,11 @@
                     </div>
                 </div> -->
             </div>
+            <img src="./assets/arrow.png" 
+            alt="" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'"
+            >
         </section>
         <section id="contact" class="trans-container hidden">
             <p class="text_p">Reach me out</p>

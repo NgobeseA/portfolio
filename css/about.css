@@ -3,9 +3,32 @@
     gap: 2rem;
     margin-block: 2rem;
 }
+#about{
+    margin-bottom: 4vh;
+    position: relative;
+}
+
+.scroll-down{
+    position: absolute;
+    border-radius: 4px;
+    background-color: var(--text-color);
+    height: 50px;
+    width: 30px;
+    right: 5%;
+    bottom: 10px;
+}
 
 .section-container{
     padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.about_pic{
+    border-radius: 2rem;
 }
 
 .about_details_container{
@@ -37,6 +60,11 @@
 
 #experience{
     background: var(--text-color);
+}
+.arrow{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
 }
 
 /*********** PROJECTS ***********/
@@ -96,6 +124,7 @@
     .section-container{
         padding-top: 1rem;
         padding-bottom: 1.5rem;
+        flex-direction: column;
     }
 
     .about_container{
@@ -113,6 +142,10 @@
 
     p{
         font-size: 16px;
+    }
+    .section-container img{
+        width: 100%;
+        height: auto;
     }
     
 }

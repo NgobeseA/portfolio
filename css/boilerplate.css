@@ -73,7 +73,7 @@ section{
     display: flex;
     justify-content: start;
     gap: 5rem;
-    
+    padding-top: 20vh;
 }
 
 .hero_pic{
@@ -157,6 +157,13 @@ footer{
     animation: moveRight 950ms ease-out;
 }
 
+.icon{
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+
 @keyframes smooth-appear {
     to{
         bottom: 20px;
@@ -188,7 +195,7 @@ footer{
 
 @keyframes moveLeft{
     from{
-        transform: translateX(-100px);
+        transform: translateX(-50%);
     }
     to{
         transform: translateX(0);
@@ -197,11 +204,15 @@ footer{
 
 .hidden{
     opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px);
+    transition: all 2s ease-out;
 }
 
 .show{
     opacity: 1;
-    transition: all 4s ease-out;
+    transform: translateX(0);
+    filter: blur(0);
 }
 
 @media (prefers-reduced-motion){
@@ -236,6 +247,12 @@ footer{
         animation: none;
     }
     
+    .hidden{
+        transform: translateX(0);
+        opacity: 1;
+        transition: none;
+        filter: blur(0);
+    }
     
 }
 

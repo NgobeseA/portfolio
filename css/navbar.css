@@ -4,11 +4,32 @@ header{
    height: 20vh;
    border-bottom-left-radius: 50%;
    border-bottom-right-radius: 50%;
+   position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    transition: all 2s ease;
 }
 
+header.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
 .nav-container{
     padding-inline: 10vw;
     padding-top: 2rem;
+}
+
+@media (prefers-reduced-motion){
+    header.hidden{
+        opacity: 1;
+        transition: none;
+        visibility: visible;
+    }
 }
 
 nav,
@@ -17,6 +38,7 @@ nav,
 }
 
 nav{
+    
     justify-content: space-between;
     align-items: center;
     height: 10vh;
@@ -47,6 +69,7 @@ nav{
 .logo{
     font-size: var(--fs-2);
     font-family: "Roboto", sans-serif;
+    flex-wrap: nowrap;
 }
 
 .logo:hover{
@@ -163,5 +186,11 @@ nav{
     .menu-links a{
         font-size: 16px;
         padding: 8px;
+    }
+
+    header{
+        height: 10vh;
+        border-bottom-left-radius: 40%;
+   border-bottom-right-radius: 40%;
     }
 }
