@@ -41,7 +41,10 @@
 
   @media screen and (max-width: 600px) {
     .contact-info-upper-container{
-        flex-wrap: wrapffffffff;
+        flex-wrap: wrap;
     }
+    .contact-info-container {
+        margin: 0;
+      }
   }
   
